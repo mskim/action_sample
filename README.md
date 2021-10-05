@@ -9,3 +9,11 @@
 1. write github-action workflow with
   - checkout
   - upload-artifacts
+
+errors 
+
+I created workflow file from my local repos and push it.
+WHen I go to action tab, it is not recorgnized and asks me to create action.????
+it has to be workflows, not workflow
+
+master -> master (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/run_app.yml` without `workflow` scope)
