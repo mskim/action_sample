@@ -17,3 +17,14 @@ WHen I go to action tab, it is not recorgnized and asks me to create action.????
 it has to be workflows, not workflow
 
 master -> master (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/run_app.yml` without `workflow` scope)
+
+
+
+Your bundle only supports platforms ["x86_64-darwin-18"] but your local platform
+25
+  is x86_64-linux. Add the current platform to the lockfile with `bundle lock
+26
+  --add-platform x86_64-linux` and try again.
+
+  solution on the terminal run
+  bundle lock --add-platform x86_64-linux
