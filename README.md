@@ -28,3 +28,6 @@ Your bundle only supports platforms ["x86_64-darwin-18"] but your local platform
 
   solution on the terminal run
   bundle lock --add-platform x86_64-linux
+
+
+test fails The process '/opt/hostedtoolcache/Ruby/3.0.0/x64/bin/bundle' failed with exit code 16
