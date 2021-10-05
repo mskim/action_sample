@@ -1,0 +1,25 @@
+name: run sample_app
+on: [push, pull_request]
+jobs:
+  run_app:
+    name: run_app
+    runs-on: unbuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-ruby@1
+        with:
+          ruby-version: 3.0
+      - name: install dependancies
+        run: |
+          gem install bundler
+          bundle install
+      - name: run app
+        run: bundler exec rake
+      - name: upload result
+        uses: actions/upload-artfact@master
+        if: always()
+        with: 
+          name: coverage-report
+          path: output.pdf
+
+
